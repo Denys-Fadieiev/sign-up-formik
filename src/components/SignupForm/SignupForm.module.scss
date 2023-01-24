@@ -1,0 +1,86 @@
+@import '../../common/styles/templates';
+@import '../../common/styles/variables';
+
+.form {
+  @extend %form;
+}
+
+.input {
+  @extend %input;
+}
+
+.wrapperInputs {
+  @extend %wrapperInputs;
+}
+
+.wrapperInput {
+  position: relative;
+  width: 48%;
+  padding-bottom: 15px;
+  @media screen and (max-width: 693px) {
+    width: 100%;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  @extend %smText;
+}
+
+.error {
+  @extend %error;
+}
+
+.label {
+  position: relative;
+  width: 100%;
+  margin: 15px;
+  padding: 20px 15px 20px 40px;
+  border: 1px solid;
+}
+
+.bigText {
+  margin-bottom: 5px;
+  font-size: 18px;
+  @media screen and (max-width: 693px) {
+    font-size: 15px;
+  }
+}
+
+.smText{
+  @extend %smText;
+}
+
+.radio {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 10px;
+}
+
+.labelCheckbox{
+  @extend %labelCheckbox;
+}
+
+.checkBox{
+  @extend %checkBox;
+}
+
+.btn{
+  @extend %btn;
+}
+
+.text{
+  @extend %text;
+}
+
+.link{
+  text-decoration: underline;
+}
+
+.btnGoogle{
+  @extend %btnGoogle;
+}
