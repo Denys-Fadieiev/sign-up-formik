@@ -1,0 +1,95 @@
+@import './variables';
+
+%flex-wrap-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 25px;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: $white-color;
+  color: $lite-grey-color;
+  outline: none;
+  @media screen and (max-width: 693px) {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+%smText {
+  font-size: 12px;
+}
+
+%form {
+  @extend %flex-wrap-wrap;
+  max-width: 540px;
+  min-width: 350px;
+  width: 100%;
+  padding: 10px;
+}
+
+%wrapperInputs {
+  @extend %flex-wrap-wrap;
+  justify-content: space-between;
+}
+
+%heading {
+  font-size: 30px;
+  font-weight: bold;
+  @media screen and (max-width: 693px) {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+%error {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  margin: 5px 0px;
+  border-radius: 4px;
+  color: $red-color;
+  font-size: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+%btn {
+  width: 100%;
+  margin: 10px 0;
+  padding: 22px;
+  border: none;
+  border-radius: 4px;
+  background-color: $aqua-color;
+  font-weight: bold;
+  text-align: center;
+}
+
+%btnGoogle {
+  @extend %btn;
+  padding: 12px;
+  background-color: $red-color;
+}
+
+%labelCheckbox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+%checkBox {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+%text {
+  width: 100%;
+  margin: 10px 0 5px;
+  text-align: center;
+}
