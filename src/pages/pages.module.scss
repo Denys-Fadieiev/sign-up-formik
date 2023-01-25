@@ -1,0 +1,20 @@
+@import '../common/styles/templates';
+
+.section {
+  @extend %flex-col-aic;
+  justify-content: center;
+}
+
+.heading {
+  @extend %heading;
+}
+
+.text {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px;
+  @media screen and (max-width: 620px) {
+    font-size: 12px;
+    text-align: center;
+  }
+}
