@@ -5,6 +5,29 @@
   flex-wrap: wrap;
 }
 
+%form {
+  @extend %flex-wrap-wrap;
+  max-width: 540px;
+  min-width: 350px;
+  width: 100%;
+  padding: 10px;
+}
+
+%wrapperInputs {
+  @extend %flex-wrap-wrap;
+  justify-content: space-between;
+}
+
+%wrapperInput {
+  position: relative;
+  width: 48%;
+  padding-bottom: 15px;
+  @media screen and (max-width: 693px) {
+    width: 100%;
+  }
+}
+
+
 %input {
   width: 100%;
   margin-top: 5px;
@@ -24,18 +47,8 @@
   font-size: 12px;
 }
 
-%form {
-  @extend %flex-wrap-wrap;
-  max-width: 540px;
-  min-width: 350px;
-  width: 100%;
-  padding: 10px;
-}
 
-%wrapperInputs {
-  @extend %flex-wrap-wrap;
-  justify-content: space-between;
-}
+
 
 %heading {
   font-size: 30px;
@@ -85,7 +98,7 @@
 
 %checkBox {
   display: inline-block;
-  margin-right: 15px;
+  margin: 0 15px;
 }
 
 %text {

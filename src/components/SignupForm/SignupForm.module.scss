@@ -14,12 +14,7 @@
 }
 
 .wrapperInput {
-  position: relative;
-  width: 48%;
-  padding-bottom: 15px;
-  @media screen and (max-width: 693px) {
-    width: 100%;
-  }
+  @extend %wrapperInput;
 }
 
 .wrapper {

@@ -1,0 +1,53 @@
+@import '../../common/styles/templates';
+@import '../../common/styles/variables';
+
+.form {
+  @extend %form;
+}
+
+.wrapperInputs {
+  width: 100%;
+}
+
+.wrapperInput {
+  @extend %wrapperInput;
+  width: 100%;
+}
+
+.input {
+  @extend %input;
+}
+
+.error {
+  @extend %error;
+}
+
+.smText{
+  @extend %smText;
+}
+
+.labelCheckbox{
+  @extend %labelCheckbox;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapperCheckBox{
+  @extend %flex-wrap-wrap;
+}
+
+.checkBox{
+  @extend %checkBox;
+}
+
+.btn{
+  @extend %btn;
+}
+
+.text{
+  @extend %text;
+}
+
+.btnGoogle{
+  @extend %btnGoogle;
+}
