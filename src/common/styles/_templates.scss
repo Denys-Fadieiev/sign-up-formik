@@ -5,6 +5,17 @@
   flex-wrap: wrap;
 }
 
+%flex-jc-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+%flex-col-aic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 %form {
   @extend %flex-wrap-wrap;
   max-width: 540px;
@@ -27,7 +38,6 @@
   }
 }
 
-
 %input {
   width: 100%;
   margin-top: 5px;
@@ -44,14 +54,12 @@
 }
 
 %smText {
-  font-size: 12px;
+  font-size: 13px;
 }
 
-
-
-
 %heading {
-  font-size: 30px;
+  margin-bottom: 10px;
+  font-size: 34px;
   font-weight: bold;
   @media screen and (max-width: 693px) {
     text-align: center;
@@ -79,13 +87,14 @@
   border: none;
   border-radius: 4px;
   background-color: $aqua-color;
+  color: $white-color;
   font-weight: bold;
   text-align: center;
 }
 
 %btnGoogle {
   @extend %btn;
-  padding: 12px;
+  padding: 15px;
   background-color: $red-color;
 }
 
@@ -93,7 +102,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 %checkBox {

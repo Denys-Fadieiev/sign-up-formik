@@ -75,7 +75,7 @@ const LoginForm = () => {
 					</p>
 				</label>
 				<button className={btn} type="submit">
-					Create account
+					LOGIN
 				</button>
 				<button className={btnGoogle} type="submit">
 					<AiOutlineGoogle /> Sign up with Google
