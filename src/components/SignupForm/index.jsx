@@ -34,7 +34,7 @@ const initialValues = {
 
 const signupMessage = (displayName) => {
 	alert(
-		`Congratulations! You have successfully registered under the name ${displayName}`
+		`Congratulations! You have successfully registered!`
 	);
 };
 
@@ -111,10 +111,9 @@ const SignupForm = () => {
 							name="isBuer"
 							value={"seller"}
 						/>
-						<p className={bigText}>Join As a Buyer</p>
+						<p className={bigText}>Join As a Creative or Marketplace Seller</p>
 						<p className={smText}>
-							I am looking for a Name, Logo or Tagline for my business, brand or
-							product.
+							I plan to submit name ideas, Logo designs or sell names in Domain Marketplace.
 						</p>
 					</label>
 				</div>
