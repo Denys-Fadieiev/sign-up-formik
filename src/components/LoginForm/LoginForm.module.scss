@@ -18,6 +18,14 @@
   @extend %input;
 }
 
+.inputValid{
+  @extend %inputValid;
+}
+
+.inputInvalid{
+  @extend %inputInvalid;
+}
+
 .error {
   @extend %error;
 }

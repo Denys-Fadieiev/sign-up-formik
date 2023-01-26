@@ -2,6 +2,7 @@ import React from "react";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { AiOutlineGoogle } from "react-icons/ai";
 import { LOGIN_SCHEMA } from "../../utils/validate/validationSchema";
+import Input from "../Input";
 import styles from "./LoginForm.module.scss";
 
 const initialValues = {
@@ -9,6 +10,17 @@ const initialValues = {
 	password: "",
 	isRememberMe: false,
 };
+
+const {
+	form,
+	wrapperInputs,
+	labelCheckbox,
+	wrapperCheckBox,
+	checkBox,
+	smText,
+	btn,
+	btnGoogle,
+} = styles;
 
 const login = () => {
 	alert("Hello! Good to see you again!");
@@ -20,20 +32,6 @@ const LoginForm = () => {
 		formikBag.resetForm();
 	};
 
-	const {
-		form,
-		wrapperInputs,
-		wrapperInput,
-		input,
-		error,
-		labelCheckbox,
-		wrapperCheckBox,
-		checkBox,
-		smText,
-		btn,
-		btnGoogle,
-	} = styles;
-
 	return (
 		<Formik
 			initialValues={initialValues}
@@ -42,32 +40,23 @@ const LoginForm = () => {
 		>
 			<Form className={form}>
 				<div className={wrapperInputs}>
-					<div className={wrapperInput}>
-						<Field
-							className={input}
-							type="email"
-							name="emailAddress"
-							placeholder="Email Address"
-						/>
-						<ErrorMessage
-							className={error}
-							name="emailAddress"
-							component="div"
-						/>
-					</div>
-					<div className={wrapperInput}>
-						<Field
-							className={input}
-							type="password"
-							name="password"
-							placeholder="Password"
-						/>
-						<ErrorMessage className={error} name="password" component="div" />
-					</div>
+					<Input
+						type="email"
+						name="emailAddress"
+						placeholder="Email Addres"
+						autoFocus
+						styles={styles}
+					/>
+					<Input
+						type="password"
+						name="password"
+						placeholder="Password"
+						styles={styles}
+					/>
 				</div>
 				<label className={labelCheckbox}>
 					<div className={wrapperCheckBox}>
-						<Field className={checkBox} type="checkbox" name="isRememberMe" /> 
+						<Field className={checkBox} type="checkbox" name="isRememberMe" />
 						<p className={smText}>Remember Me</p>
 					</div>
 					<p className={smText}>

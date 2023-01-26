@@ -42,7 +42,7 @@
   width: 100%;
   margin-top: 5px;
   padding: 25px;
-  border: 1px solid;
+  border: 2px solid;
   border-radius: 4px;
   background-color: $white-color;
   color: $lite-grey-color;
@@ -51,6 +51,14 @@
     padding: 15px;
     font-size: 14px;
   }
+}
+
+%inputValid{
+  border: 2px solid $green-color;
+}
+
+%inputInvalid{
+  border: 2px solid $red-color;
 }
 
 %smText {
