@@ -9,6 +9,14 @@
   @extend %input;
 }
 
+.inputValid{
+  @extend %inputValid;
+}
+
+.inputInvalid{
+  @extend %inputInvalid;
+}
+
 .wrapperInputs {
   @extend %wrapperInputs;
 }

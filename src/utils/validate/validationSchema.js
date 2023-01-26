@@ -4,11 +4,12 @@ const namesValid = yup.string().trim().min(2).max(24).required();
 const email = yup.string().email().required();
 const password = yup
   .string()
+  .trim()
   .min(6)
   .max(24)
-  .matches(/^.[A-Z]/, 'Password must have capital letter!')
-  .matches(/^.[a-z]/, 'Password must have lower letter!')
-  .matches(/^.[0-9]/, 'Password must have number!')
+  // .matches(/^.[A-Z]/, 'Password must have capital letter!')
+  // .matches(/^.[a-z]/, 'Password must have lower letter!')
+  // .matches(/^.[0-9]$/, 'Password must have number!')
   .required();
 
 export const LOGIN_SCHEMA = yup.object({

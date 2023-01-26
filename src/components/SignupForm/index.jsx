@@ -1,17 +1,15 @@
 import React from "react";
-import { ErrorMessage, Field, Form, Formik } from "formik";
+import { Field, Form, Formik } from "formik";
 import { AiOutlineGoogle } from "react-icons/ai";
 import { SIGNUP_SCHEMA } from "../../utils/validate/validationSchema";
 import styles from "./SignupForm.module.scss";
+import Input from "../Input";
 
 const {
 	form,
-	input,
 	wrapper,
-	error,
 	label,
 	wrapperInputs,
-	wrapperInput,
 	bigText,
 	smText,
 	radio,
@@ -54,73 +52,43 @@ const SignupForm = () => {
 		>
 			<Form className={form}>
 				<div className={wrapperInputs}>
-					<div className={wrapperInput}>
-						<Field
-							className={input}
-							type="text"
-							name="firstName"
-							placeholder="First Name"
-							autoFocus
-						/>
-						<ErrorMessage className={error} name="firstName" component="div" />
-					</div>
-					<div className={wrapperInput}>
-						<Field
-							className={input}
-							type="text"
-							name="lastName"
-							placeholder="Last Name"
-						/>
-						<ErrorMessage className={error} name="lastName" component="div" />
-					</div>
-					<div className={wrapperInput}>
-						<Field
-							className={input}
-							type="text"
-							name="displayName"
-							placeholder="Display Name"
-						/>
-						<ErrorMessage
-							className={error}
-							name="displayName"
-							component="div"
-						/>
-					</div>
-					<div className={wrapperInput}>
-						<Field
-							className={input}
-							type="email"
-							name="emailAddress"
-							placeholder="Email Address"
-						/>
-						<ErrorMessage
-							className={error}
-							name="emailAddress"
-							component="div"
-						/>
-					</div>
-					<div className={wrapperInput}>
-						<Field
-							className={input}
-							type="password"
-							name="password"
-							placeholder="Password"
-						/>
-						<ErrorMessage className={error} name="password" component="div" />
-					</div>
-					<div className={wrapperInput}>
-						<Field
-							className={input}
-							type="password"
-							name="passwordConfirmation"
-							placeholder="Password Confirmation"
-						/>
-						<ErrorMessage
-							className={error}
-							name="passwordConfirmation"
-							component="div"
-						/>
-					</div>
+					<Input
+						type="text"
+						name="firstName"
+						placeholder="First Name"
+						autoFocus
+						styles={styles}
+					/>
+					<Input
+						type="text"
+						name="lastName"
+						placeholder="Last Name"
+						styles={styles}
+					/>
+					<Input
+						type="text"
+						name="displayName"
+						placeholder="Display Name"
+						styles={styles}
+					/>
+					<Input
+						type="email"
+						name="emailAddress"
+						placeholder="Email Address"
+						styles={styles}
+					/>
+					<Input
+						type="password"
+						name="password"
+						placeholder="Password"
+						styles={styles}
+					/>
+					<Input
+						type="password"
+						name="passwordConfirmation"
+						placeholder="Password Confirmation"
+						styles={styles}
+					/>
 				</div>
 				<div className={wrapper}>
 					<label className={label}>
